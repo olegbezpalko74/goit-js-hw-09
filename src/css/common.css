@@ -16,3 +16,44 @@ img {
   display: block;
   max-width: 100%;
 }
+
+#datetime-picker {
+  font-size: 20px;
+  color: #ed6008;
+  text-align: center;
+  outline: 1px rgb(15, 15, 14) solid;
+  border-radius: 4px;
+}
+
+.btn-start {
+  font-size: 20px;
+  color: rgb(88, 9, 234);
+  width: 80px;
+  margin-left: 20px;
+  background-color: #f51b1b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.timer {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.label {
+   color: #d61a24; 
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: center;
+}
+
+.field + .field {
+  margin-left: 30px;
+}
+
+.value {
+  font-size: 40px;
+}
