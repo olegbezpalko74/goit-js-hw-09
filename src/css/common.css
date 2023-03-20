@@ -27,10 +27,10 @@ img {
 
 .btn-start {
   font-size: 20px;
-  color: rgb(88, 9, 234);
+  color: #f0d927;
   width: 80px;
   margin-left: 20px;
-  background-color: #f51b1b;
+  background-color: #3fb8ef;
   border-radius: 4px;
   cursor: pointer;
 }

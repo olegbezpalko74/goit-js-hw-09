@@ -45,8 +45,8 @@ function convertMs(ms) {
           fontSize: '20px',
           width: '400px',
           failure: {
-            background: '#663399',
-            textColor: '#ffffff',
+            background: '#3fb8ef',
+            textColor: '#f0d927',
           },
         });
         selectedDates[0] = new Date();
