@@ -12,6 +12,21 @@ function onSubmitForm(e) {
   let step = Number(e.target.step.value);
   let amount = Number(e.target.amount.value);
 
+  if (delay < 0) {
+    Notiflix.Notify.warning('Delay must be greater or equal to 0');
+    return;
+  }
+
+  if (step <= 0) {
+    Notiflix.Notify.warning('Step must be greater than 0');
+    return;
+  }
+
+  if (amount <= 0) {
+    Notiflix.Notify.warning('Amount must be greater than 0');
+    return;
+  }
+
   function createPromise(position, delay) {
     const shouldResolve = Math.random() > 0.3;
 
