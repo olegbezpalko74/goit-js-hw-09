@@ -34,8 +34,10 @@ const options = {
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
+
   onClose(selectedDates) {
-    if (selectedDates[0] < Date.now()) {
+    selectedTime = selectedDates[0];
+    if (selectedTime < Date.now()) {
       Notify.failure('Please choose a date in the future', {
         position: 'center-top',
         fontSize: '20px',
@@ -45,11 +47,12 @@ const options = {
           textColor: '#ffffff',
         },
       });
-      selectedDates[0] = new Date();
+      selectedTime = new Date();
       refs.btnStart.disabled = true;
+      refs.input.disabled = true;
     } else {
-      selectedTime = selectedDates[0];
       refs.btnStart.disabled = false;
+      refs.input.disabled = true;
     }
   },
 };
